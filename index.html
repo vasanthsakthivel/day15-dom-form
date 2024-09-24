@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM FORM</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>User Information Form</h1>
+    <form id="user">
+        <div class="input-group">
+            <label for="FirstName">FirstName</label><br>
+            <input class="text-box" style="margin-top: 10px;" type="text" name="FirstName" required><br>
+        </div>
+        <div class="input-group">
+            <label for="LastName">LastName</label><br>
+            <input class="text-box" style="margin-top: 10px;" type="text" name="LastName" required><br>
+        </div>
+        <div class="input-group">
+            <label for="Email">Email</label><br>
+            <input class="text-box" style="margin-top: 10px;" type="email" name="email" required><br>
+        </div>
+        <div class="input-group">
+            <label for="Address">Address</label><br>
+            <input class="text-box" style="margin-top: 10px;" type="text" name="Address" required><br>
+        </div>
+        <div class="input-group">
+            <label for="pincode">pincode</label><br>
+            <input class="text-box" style="margin-top: 10px;" type="text" name="pincode" required><br>
+        </div>
+        <div class="input-group">
+            <label for="Gender">Gender</label><br>
+            <input style="margin-top: 10px;" type="radio" name="Gender" id="" value="Male" required>Male
+            <input type="radio" name="Gender" id="" value="Female" required>Female <br>
+        </div>
+        <div class="input-group">
+            <label for="Choiceoffood">Choice of Food (Select atleast two)</label><br>
+            <input style="margin-top: 10px;" type="checkbox" id="Food1" name="Choiceoffood" value="Pizza">Pizza
+            <input type="checkbox" id="Food2" name="Choiceoffood" value="Burger">Burger
+            <input type="checkbox" id="Food3" name="Choiceoffood" value="Pasta">Pasta
+            <input type="checkbox" id="Food4" name="Choiceoffood" value="Salat">Salat
+            <input type="checkbox" id="Food5" name="Choiceoffood" value="Icecream">Icecream <br>
+        </div>
+        <div class="input-group">
+            <label for="State">State</label><br>
+            <input class="text-box" style="margin-top: 10px;" type="text" name="State" required><br>
+        </div>
+        <div class="input-group">
+            <label for="Country">Country</label><br>
+            <input class="text-box" style="margin-top: 10px;" type="text" name="Country" required><br>
+        </div>
+        <button style="margin-top: 10px;" type="submit">Submit</button>
+    </form>
+    <h2>Submitted Data</h2>
+    <table id="tableData">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>pincode</th>
+                <th>Gender</th>
+                <th>Choiceoffood</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
